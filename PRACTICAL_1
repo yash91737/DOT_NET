@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Prac2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the Weight(kg):");
+            int Weight = int.Parse(Console.ReadLine());
+
+            Console.Write("Enter the Distane(km):");
+            int Distance = int.Parse(Console.ReadLine());
+
+            if (Distance <= 300)
+            {
+                Console.Write(Weight * 50);
+            }
+            else if(Distance >= 100 && Distance < 200)
+            {
+                Console.Write(Weight * 65);  
+            }
+            else if(Distance >= 200 && Distance < 300)
+            {
+                Console.Write(Weight * 90);
+            }
+            else if(Distance >= 300)
+            {
+                Console.Write(Weight * 120);
+            }
+            else
+            {
+                Console.Write("wrong Input");
+            }
+             Console.ReadLine();
+        }
+    }
+}
