@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Practical_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, sum=0, digit;
+            Console.WriteLine("Enter the Digit :");
+            n = int.Parse(Console.ReadLine());
+                  
+            for (int i = n; i > 0; i--)
+            {
+                digit = n % 10;
+                sum = sum + digit;
+                n = n / 10;
+            }
+            Console.WriteLine("Sum of Digit : " + sum);
+            Console.ReadLine();
+
+        }
+    }
+}
